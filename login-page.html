@@ -1,146 +1,117 @@
-$(document).ready(function() {
-	var rellax;
-	if ($('.relax')) {
-		relax = new Rellax('.rellax');
-	}
-	setTimeout(function() {
-		$('#loading-page').fadeOut();
-	}, 500);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login • Beth Sefro</title>
+	<link rel="icon" href="https://i.imgur.com/lYEuLKe.png">
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://kit.fontawesome.com/f4ad9299c2.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+	<link rel="stylesheet" href="../Style/style.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<script src="login-scroll.js"></script>
+</head>
+<body>
 
-	$('.hvus').click(function() {
-		$hano = $(this);
-		$(this).find('.hvus-animation').show();
-		$(this).find('.hvus-animation').css({
-			'height': '0',
-			'transition': 'none'
-		});
-		setTimeout(function() {
-			$hano.find('.hvus-animation').css({
-				'transition': 'height 250ms ease-in-out'
-			});
-			setTimeout(function() {
-				$hano.find('.hvus-animation').css({
-					'height': '100%'
-				});
-				setTimeout(function() {
-					$hano.find('.hvus-animation').fadeOut();
-				}, 450);
-			});
-		});
-	});
+	<div id="loading-page" style="width:100vw;height:100vh;position: fixed;top:0;left:0;background:#358;z-index: 99999;"></div>
 
-	$('#login-uName').focus(function() {
-		$('#uName-border').css({
-			'width': '100%'
-		});
-	});
-	$('#login-uName').blur(function() {
-		$('#uName-border').css({
-			'width': '0'
-		});
-	});
-	$('#login-pwd').focus(function() {
-		$('#pwd-border').css({
-			'width': '100%'
-		});
-	});
-	$('#login-pwd').blur(function() {
-		$('#pwd-border').css({
-			'width': '0'
-		});
-	});
+	<div id="risho" class="no-select">
+		<img src="https://i.imgur.com/OnKZRVY.png" class="risho-logo" id="logo-heworo" alt="Beth Sefro">
+		<div id="hvus-mrabco">
+			<div class="hvus" id="courses-button">
+				<h3>Syriac Courses <i class="fas fa-angle-down"></i></h3>
+				<h3 class="h3gnizo">Syriac Courses <i class="fas fa-angle-down"></i></h3>
+				<div class="hvus-animation hvus-animation-semolo"></div>
+				<div class="hvus-animation hvus-animation-yamino"></div>
+			</div>
+			<div class="hvus" id="dictionaries-button">
+				<h3><i class="fas fa-book"></i> Dictionaries</h3>
+				<h3 class="h3gnizo"><i class="fas fa-book"></i> Dictionaries</h3>
+				<div class="hvus-animation hvus-animation-semolo"></div>
+				<div class="hvus-animation hvus-animation-yamino"></div>
+			</div>
+			<div class="hvus" id="fonts-button">
+				<h3><span style="font-family: 'Estrangelo Quenneshrin';font-size: 30px;position: absolute;top: 0;transform: translateY(-10%);">ܐ</span> <span style="margin: 0 0 0 30px;">Fonts</span></h3>
+				<h3 class="h3gnizo"><span style="font-family: 'Estrangelo Quenneshrin';font-size: 30px;position: absolute;top: 0;transform: translateY(-10%);">ܐ</span> <span style="margin: 0 0 0 30px;">Fonts</span></h3>
+				<div class="hvus-animation hvus-animation-semolo"></div>
+				<div class="hvus-animation hvus-animation-yamino"></div>
+			</div>
+			<div class="hvus" id="about-button">
+				<h3><i class="far fa-question-circle"></i> About us</h3>
+				<h3 class="h3gnizo"><i class="far fa-question-circle"></i> About us</h3>
+				<div class="hvus-animation hvus-animation-semolo"></div>
+				<div class="hvus-animation hvus-animation-yamino"></div>
+			</div>
+			<div class="hvus" id="contact-button">
+				<h3><i class="fas fa-phone-alt"></i> Contact</h3>
+				<h3 class="h3gnizo"><i class="fas fa-phone-alt"></i> Contact</h3>
+				<div class="hvus-animation hvus-animation-semolo"></div>
+				<div class="hvus-animation hvus-animation-yamino"></div>
+			</div>
+			<div class="hvus" id="home-hvus">
+				<h3><i class="fas fa-home"></i> Home</h3>
+				<h3 class="h3gnizo"><i class="fas fa-home"></i> Home</h3>
+				<div class="hvus-animation hvus-animation-semolo"></div>
+				<div class="hvus-animation hvus-animation-yamino"></div>
+			</div>
+		</div>
 
-	$('.login-form button').append('<span class="ripple"></span>');
-	$('.login-form button').click(function(e) {
-		let top = $(window).scrollTop() - $(this).offset().top + e.clientY;
-		let left = $(window).scrollLeft() - $(this).offset().left + e.clientX;
-		$(this).children('span').css({
-			"left": left,
-			"top": top
-		});
-		$(this).children('span').addClass('activeRipple');
-		setTimeout(function() {
-			$('.ripple').removeClass('activeRipple');
-		}, 500);
-	});
+		<div id="ham">
+			<div class="hamLine" id="ham1"></div>
+			<div class="hamLine" id="ham2"></div>
+			<div class="hamLine" id="ham3"></div>
+		</div>
+	</div>
 
-	$('#new-acc').click(function() {
-		$('#log-sign-wrapper').css({
-			'transform': 'translateX(-65%)',
-		});
-		$('#login-wrapper').css({
-			'opacity': '0'
-		});
-		$('#signup-wrapper').css({
-			'opacity': '100'
-		});
-		setTimeout(function() {
-			$('#login-wrapper input, #login-wrapper button').prop('disabled', true);
-			$('#login-wrapper button').css({
-				'cursor': 'default'
-			});
-			$('#old-acc').css({
-				'cursor': 'pointer'
-			});
+	<div id="mrabco1">
+		<div id="login-mrabco">
+			<div id="medone-dmrabco">
+				<div class="login-form">
+					<div id="log-sign-wrapper">
+						<div id="login-wrapper">
+							<center>
+								<h1>Log In</h1>
+								<hr>
+								<div class="input">
+									<input type="text" id="login-uName" placeholder="Username">
+									<div class="input-border" id="uName-border"></div>
+								</div>
+								<div class="input">
+									<input type="password" id="login-pwd" placeholder="Password">
+									<div class="input-border" id="pwd-border"></div>
+								</div>
+							</center>
+							<p class="login-error">Erroneous credentials</p>
+							<button id="login-button" type="submit">Log In</button>
+							<a href="#signup" id="new-acc">Need an account? <span style="text-decoration: underline;">Register</span></a>
+						</div><div id="signup-wrapper">
+							<center>
+								<h1>Sign Up</h1>
+								<hr>
+								<div class="input">
+									<input type="text" id="signup-uName" placeholder="Username">
+									<div class="input-border" id="uName-border"></div>
+								</div>
+								<div class="input">
+									<input type="password" id="signup-pwd" placeholder="Password">
+									<div class="input-border" id="pwd-border"></div>
+								</div>
+							</center>
+							<p class="login-error">Erroneous credentials</p>
+							<button id="signup-button" type="submit">Sign Up</button>
+							<a href="#login" id="old-acc">Already have an account? <span style="text-decoration: underline;">Log in</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-			$('#signup-wrapper input, #signup-wrapper button').prop('disabled', false);
-			$('#signup-wrapper button').css({
-				'cursor': 'pointer'
-			});
-			$('#new-acc').css({
-				'cursor': 'default'
-			});
-		}, 350);
-	});
-
-	$('#old-acc').click(function() {
-		$('#log-sign-wrapper').css({
-			'transform': 'translateX(10%)',
-		});
-		$('#login-wrapper').css({
-			'opacity': '100'
-		});
-		$('#signup-wrapper').css({
-			'opacity': '0'
-		});
-		setTimeout(function() {
-			$('#login-wrapper input, #login-wrapper button').prop('disabled', false);
-			$('#login-wrapper button').css({
-				'cursor': 'pointer'
-			});
-			$('#new-acc').css({
-				'cursor': 'pointer'
-			});
-
-			$('#signup-wrapper input, #signup-wrapper button').prop('disabled', true);
-			$('#signup-wrapper button').css({
-				'cursor': 'default'
-			});
-			$('#old-acc').css({
-				'cursor': 'default'
-			});
-		}, 350);
-	});
-
-	$('#login-hvus').click(function() {
-		setTimeout(function() {
-			window.open('login-page.html', '_self');
-		}, 400);
-	});
-	$('#home-hvus').click(function() {
-		setTimeout(function() {
-			window.open('index.html', '_self');
-		}, 400);
-	});
-
-	// Login system
-	var name = $('#login-uName');
-	var pwd = $('#login-pwd');
-	var loginBtn = $('#login-button');
-	var loginError = $('#login-error');
-	loginBtn.click(function() {
-		if ($('#login-uName').html()) {
-			alert();
-		}
-	});
-});
+	<div id="mrabco2">
+		<h2>Introduction</h2>
+	</div>
+	
+</body>
+</html>
