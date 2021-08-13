@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap');
+
+* {
+	margin: 0;
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+body {
+	height: 200vh;
+}
+
+p {
+	font-family: 'Noto Sans JP';
+	font-weight: 300;
+}
+
+.no-select {
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#mrabco1 {
+	background-image: url('https://i.imgur.com/d1zAOB8.jpg');
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+}
+#mrabco1::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, #4060a0ea, #007090e8);
+	display: block;
+	position: absolute;
+}
+
+#medone-dmrabco {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
+#risho {
+	width: calc(100% - 30px);
+	border-bottom: 1px solid #ffffff20;
+	height: 70px;
+	background: transparent;
+	padding: 15px;
+	position: relative;
+	text-transform: uppercase;
+	transition: all 250ms ease-in-out;
+	position: fixed;
+	z-index: 999;
+}
+
+.risho-logo {
+	height: 70px;
+	position: absolute;
+	transition: all 250ms ease-in-out;
+}
+
+.hvus {
+	height: calc(100% - 30px);
+	display: inline-block;
+	width: auto;
+	position: relative;
+	padding: 15px;
+	cursor: pointer;
+	background: transparent;
+	transition: all 230ms ease-in-out;
+}
+.hvus:hover {
+	background: #fff3;
+}
+
+#hvus-mrabco {
+	width: calc(100% - 145px);
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.hvus h3 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	transition: all 250ms ease-in-out;
+}
+
+.hvus i {
+	margin: 0 5px;
+}
+
+.h3gnizo {
+	opacity: 0;
+	position: static!important;
+}
+
+.hvus-animation {
+	width: 1px;
+	height: 0%;
+	background: #fff5;
+	position: absolute;
+	transition: height 250ms ease-in-out;
+}
+
+.hvus-animation-semolo {
+	left: 0;
+	top: 0;
+}
+
+.hvus-animation-yamino {
+	right: 0;
+	bottom: 0;
+}
+
+#login-hvus, #home-hvus {
+	position: absolute;
+	right: 15px;
+}
+
+#ham {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	border-radius: 50%;
+	transition: all 250ms ease-in-out;
+	display: none;
+}
+#ham:active {
+	background: #8885;
+}
+
+.hamLine {
+	width: 60%;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 200ms ease-in-out;
+}
+
+#ham1 {
+	top: 25%;
+}
+
+#ham2 {
+	top: 50%;
+}
+
+#ham3 {
+	top: 75%;
+}
+
+#mrabco2 {
+	width: calc(100vw - 50px);
+	height: 100vh;
+	background: #fff;
+	padding: 25px;
+	z-index: 2;
+	position: relative;
+}
+
+#mrabco2 h2 {
+	font-size: 50px;
+	font-weight: 500;
+	font-family: Times New Roman;
+}
+
+@media screen and (max-width: 500px) {
+	#mrabco1 {
+		background-image: url('https://i.imgur.com/JXKkJW8.jpg');
+	}
+}
+@media screen and (max-width: 1195px) {
+	#hvus-mrabco {
+		display: none;
+	}
+	#ham {
+		display: block;
+	}
+	#risho {
+		height: 50px;
+	}
+	.risho-logo {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+#login-mrabco {
+	background: #358;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+.login-form {
+	width: 500px;
+	height: auto;
+	background: #fff;
+	padding: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 3px;
+	box-shadow: 0 0 10px 0 #0008;
+}
+
+.login-form hr {
+	border: none;
+	border-bottom: 1px solid #0002;
+	margin: 30px 0;
+}
+
+.login-form input {
+	background: none;
+	display: block;
+	border: none;
+	width: 100%;
+	outline: none;
+	padding: 15px;
+}
+
+.login-form .input {
+	margin: 30px 0;
+	width: 100%;
+	border-bottom: 1px solid #0003;
+	position: relative;
+}
+
+.input-border {
+	width: 0;
+	height: 1px;
+	background: #58f;
+	position: absolute;
+	left: 50%;
+	bottom: -1px;
+	transform: translateX(-50%);
+	transition: width 250ms ease-in-out;
+}
+
+.login-form button {
+	border: none;
+	background: #358;
+	padding: 10px 15px;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: background 150ms ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+
+.login-form button:hover {
+	background: #469;
+}
+
+.ripple {
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	transform: scale(1);
+	opacity: 0;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.activeRipple {
+	animation: ripple 500ms;
+}
+
+@keyframes ripple {
+	0% {
+		transform: scale(0);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(100);
+		opacity: 0;
+	}
+}
+
+#new-acc {
+	color: #358;
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	transform: translateY(-50%);
+}
+
+.login-error {
+	color: #f00;
+	margin: 30px 0;
+	display: none;
+}
