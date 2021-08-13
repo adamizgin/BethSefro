@@ -65,10 +65,14 @@ $(document).ready(function() {
 	});
 
 	$('#login-hvus').click(function() {
-		window.open('login-page.html', '_self');
+		setTimeout(function() {
+			window.open('login-page.html', '_self');
+		}, 400);
 	});
 	$('#home-hvus').click(function() {
-		window.open('index.html', '_self');
+		setTimeout(function() {
+			window.open('index.html', '_self');
+		}, 400);
 	});
 
 	// Login system
