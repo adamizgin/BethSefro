@@ -68,7 +68,7 @@ $(document).ready(function() {
 		window.open('login-page.html', '_self');
 	});
 	$('#home-hvus').click(function() {
-		window.open('Beth%20Sefro.html', '_self');
+		window.open('index.html', '_self');
 	});
 
 	// Login system
