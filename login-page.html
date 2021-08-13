@@ -69,21 +69,41 @@
 		<div id="login-mrabco">
 			<div id="medone-dmrabco">
 				<div class="login-form">
-					<center>
-						<h1>Log In</h1>
-						<hr>
-						<div class="input">
-							<input type="text" id="login-uName" placeholder="Username">
-							<div class="input-border" id="uName-border"></div>
+					<div id="log-sign-wrapper">
+						<div id="login-wrapper">
+							<center>
+								<h1>Log In</h1>
+								<hr>
+								<div class="input">
+									<input type="text" id="login-uName" placeholder="Username">
+									<div class="input-border" id="uName-border"></div>
+								</div>
+								<div class="input">
+									<input type="password" id="login-pwd" placeholder="Password">
+									<div class="input-border" id="pwd-border"></div>
+								</div>
+							</center>
+							<p class="login-error">Erroneous credentials</p>
+							<button id="login-button" type="submit">Log In</button>
+							<a href="#signup" id="new-acc">Need an account? <span style="text-decoration: underline;">Register</span></a>
+						</div><div id="signup-wrapper">
+							<center>
+								<h1>Sign Up</h1>
+								<hr>
+								<div class="input">
+									<input type="text" id="signup-uName" placeholder="Username">
+									<div class="input-border" id="uName-border"></div>
+								</div>
+								<div class="input">
+									<input type="password" id="signup-pwd" placeholder="Password">
+									<div class="input-border" id="pwd-border"></div>
+								</div>
+							</center>
+							<p class="login-error">Erroneous credentials</p>
+							<button id="signup-button" type="submit">Sign Up</button>
+							<a href="#login" id="old-acc">Already have an account? <span style="text-decoration: underline;">Log in</span></a>
 						</div>
-						<div class="input">
-							<input type="password" id="login-pwd" placeholder="Password">
-							<div class="input-border" id="pwd-border"></div>
-						</div>
-					</center>
-					<p class="login-error">Erroneous credentials</p>
-					<button id="login-button" type="submit">Log In</button>
-					<a href="#signin" id="new-acc">Need an account? <span style="text-decoration: underline;">Register</span></a>
+					</div>
 				</div>
 			</div>
 		</div>
