@@ -6,6 +6,7 @@ $(document).ready(function() {
 	setTimeout(function() {
 		$('#loading-page').fadeOut();
 	}, 500);
+	$('#risho').load('header.html');
 
 	$('.hvus').click(function() {
 		$hano = $(this);
