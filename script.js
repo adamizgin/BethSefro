@@ -64,64 +64,6 @@ $(document).ready(function() {
 		}, 500);
 	});
 
-	$('#new-acc').click(function() {
-		$('#log-sign-wrapper').css({
-			'transform': 'translateX(-65%)',
-		});
-		$('#login-wrapper').css({
-			'opacity': '0'
-		});
-		$('#signup-wrapper').css({
-			'opacity': '100'
-		});
-		setTimeout(function() {
-			$('#login-wrapper input, #login-wrapper button').prop('disabled', true);
-			$('#login-wrapper button').css({
-				'cursor': 'default'
-			});
-			$('#old-acc').css({
-				'cursor': 'pointer'
-			});
-
-			$('#signup-wrapper input, #signup-wrapper button').prop('disabled', false);
-			$('#signup-wrapper button').css({
-				'cursor': 'pointer'
-			});
-			$('#new-acc').css({
-				'cursor': 'default'
-			});
-		}, 350);
-	});
-
-	$('#old-acc').click(function() {
-		$('#log-sign-wrapper').css({
-			'transform': 'translateX(10%)',
-		});
-		$('#login-wrapper').css({
-			'opacity': '100'
-		});
-		$('#signup-wrapper').css({
-			'opacity': '0'
-		});
-		setTimeout(function() {
-			$('#login-wrapper input, #login-wrapper button').prop('disabled', false);
-			$('#login-wrapper button').css({
-				'cursor': 'pointer'
-			});
-			$('#new-acc').css({
-				'cursor': 'pointer'
-			});
-
-			$('#signup-wrapper input, #signup-wrapper button').prop('disabled', true);
-			$('#signup-wrapper button').css({
-				'cursor': 'default'
-			});
-			$('#old-acc').css({
-				'cursor': 'default'
-			});
-		}, 350);
-	});
-
 	$('#login-hvus').click(function() {
 		setTimeout(function() {
 			window.open('login-page.html', '_self');
