@@ -315,7 +315,7 @@ hr {
 	}
 }
 
-#new-acc, #old-acc {
+#new-acc {
 	color: #358;
 	position: absolute;
 	right: 0;
@@ -330,30 +330,10 @@ hr {
 }
 
 #login-wrapper {
-	width: 50%;
+	width: 100%;
 	height: 100%;
 	background: none;
 	position: relative;
-	transform: translateX(0%);
 	transition: all 300ms ease-in-out;
-	display: inline-block;
-}
-
-#signup-wrapper {
-	width: 50%;
-	height: 100%;
-	background: transparent;
-	position: relative;
-	transform: translateX(50%);
-	transition: all 350ms ease-in-out;
-	display: inline-block;
-}
-
-#log-sign-wrapper {
-	width: calc(150% - 60px);
-	height: 100%;
-	background: transparent;
-	display: inline-block;
-	transition: transform 350ms ease-in-out;
-	transform: translateX(10%);
+	display: block;
 }
