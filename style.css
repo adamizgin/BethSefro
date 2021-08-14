@@ -337,3 +337,42 @@ hr {
 	transition: all 300ms ease-in-out;
 	display: block;
 }
+
+.risho-dropdown {
+	width: 200px;
+	height: auto;
+	background: #fff;
+	padding: 30px;
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	transform: translate(-50%, 100%);
+	border-radius: 3px;
+	transition: bottom 200ms ease-in-out;
+	display: none;
+}
+.risho-dropdown::before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: #fff;
+	top: -12px;
+	left: 25px;
+	transform: rotate(45deg);
+	border-radius: 3px;
+}
+
+.risho-dropdown h4 {
+	text-transform: none;
+	transition: all 200ms ease;
+}
+
+.risho-dropdown hr {
+	margin: 20px 0;
+}
+
+.risho-dropdown h4:hover {
+	color: #c55;
+}
