@@ -40,7 +40,7 @@ hr {
 }
 
 #mrabco1 {
-	background-image: url('surtotho/isaac_computer.jpg');
+	background-image: url('Surtotho/isaac_computer.jpg');
 	width: 100vw;
 	height: 100vh;
 	background-repeat: no-repeat;
@@ -200,7 +200,7 @@ hr {
 
 @media screen and (max-width: 500px) {
 	#mrabco1 {
-		background-image: url('surtotho/isaac_mobile.jpg');
+		background-image: url('Surtotho/isaac_mobile.jpg');
 	}
 }
 @media screen and (max-width: 1195px) {
