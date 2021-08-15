@@ -341,7 +341,7 @@ hr {
 .risho-dropdown {
 	width: 200px;
 	height: auto;
-	background: #fff;
+	background: #eee;
 	padding: 30px;
 	position: absolute;
 	bottom: 100px;
@@ -357,7 +357,7 @@ hr {
 	display: block;
 	width: 25px;
 	height: 25px;
-	background: #fff;
+	background: #eee;
 	top: -12px;
 	left: 25px;
 	transform: rotate(45deg);
