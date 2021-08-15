@@ -380,3 +380,12 @@ hr {
 .risho-dropdown a:hover {
 	color: #c55;
 }
+
+#medone-dmrabco h1 {
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 60px;
+}
