@@ -6,7 +6,7 @@ $(window).on('scroll', function(e) {
 			'background': '#fff',
 			'box-shadow': '0 0 10px 0 #0003'
 		});
-		$('#risho *').css({
+		$('#risho h3, #risho i').css({
 			'color': '#000'
 		});
 		$('#logo-heworo').css({
@@ -21,7 +21,7 @@ $(window).on('scroll', function(e) {
 			'background': 'transparent',
 			'box-shadow': 'none'
 		});
-		$('#risho *').css({
+		$('#risho h3, #risho i').css({
 			'color': '#fff'
 		});
 		$('#logo-heworo').css({
