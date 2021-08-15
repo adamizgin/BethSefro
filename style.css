@@ -342,7 +342,7 @@ hr {
 	width: 200px;
 	height: auto;
 	background: #eee;
-	padding: 30px;
+	padding: 10px 30px;
 	position: absolute;
 	bottom: 100px;
 	left: 50%;
@@ -365,15 +365,16 @@ hr {
 	border-radius: 3px;
 }
 
-.risho-dropdown h4 {
+.risho-dropdown hr {
+	margin: 0;
+}
+
+.risho-dropdown a {
+	padding: 25px 0;
+	display: block;
 	text-transform: none;
 	transition: all 200ms ease;
 }
-
-.risho-dropdown hr {
-	margin: 20px 0;
-}
-
-.risho-dropdown h4:hover {
+.risho-dropdown a:hover {
 	color: #c55;
 }

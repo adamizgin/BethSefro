@@ -100,7 +100,7 @@ $(document).ready(function() {
 			},);
 		});
 
-		$('.risho-dropdown h4').hover(function() {
+		$('.risho-dropdown a').hover(function() {
 			$(this).css({
 				'transform': 'translateX(5%)'
 			});
