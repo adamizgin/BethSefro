@@ -351,6 +351,7 @@ hr {
 	transition: bottom 200ms ease-in-out;
 	display: none;
 	box-shadow: 0 0 10px 0 #0005;
+	cursor: default;
 }
 .risho-dropdown::before {
 	content: '';
