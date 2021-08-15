@@ -109,5 +109,11 @@ $(document).ready(function() {
 				'transform': 'translateX(0%)'
 			});
 		});
+
+		$('#syriac-course-1').click(function() {
+			setTimeout(function() {
+				window.open('course1.html', '_self');
+			}, 400);
+		});
 	}, 300);
 });
