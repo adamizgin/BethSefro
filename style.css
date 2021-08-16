@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap');
+@font-face {
+	font-family: 'Serto BeQaco Bold';
+	src: local('Serto BeQaco Bold');
+}
 
 * {
 	margin: 0;
@@ -7,14 +10,14 @@
 }
 
 p {
-	font-family: 'Noto Sans JP';
 	font-weight: 300;
 	font-size: 18px;
 	margin: 0 0 30px 0;
+	letter-spacing: .5px;
 }
 
 p b {
-	font-weight: 500;
+	font-weight: 600;
 }
 
 a {
@@ -28,10 +31,21 @@ hr {
 	margin: 30px 0;
 }
 
+.izgin {
+	font-family: 'Serto BeQaco Bold';
+	letter-spacing: 0;
+	font-size: 30px;
+}
+
+.estrangeloMakikho {
+	font-family: 'EstrangeloEdessa';
+	font-size: 30px;
+}
+
 .mrabco h3 {
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: 500;
-	font-family: 'Noto Sans JP';
+	margin-bottom: 10px;
 }
 
 .no-select {
@@ -196,6 +210,7 @@ hr {
 	font-size: 50px;
 	font-weight: 500;
 	font-family: Times New Roman;
+	margin-bottom: 15px;
 }
 
 @media screen and (max-width: 500px) {
@@ -238,6 +253,7 @@ hr {
 	border-radius: 3px;
 	box-shadow: 0 0 10px 0 #0008;
 	overflow: hidden;
+	color: #000;
 }
 
 .login-form hr {
@@ -400,4 +416,10 @@ hr {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.alaphbeth-pathura {
+	width: 100%;
+	max-width: 700px;
+	display: block;
 }
