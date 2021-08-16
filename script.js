@@ -115,5 +115,7 @@ $(document).ready(function() {
 				window.open('course1.html', '_self');
 			}, 400);
 		});
+
+		$('#alaphbeth-pathura').load('Surtotho/syriac_script.html');
 	}, 300);
 });
