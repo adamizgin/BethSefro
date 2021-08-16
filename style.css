@@ -256,6 +256,10 @@ hr {
 	color: #000;
 }
 
+.login-form h1 {
+	color: #000;
+}
+
 .login-form hr {
 	border: none;
 	border-bottom: 1px solid #0002;
