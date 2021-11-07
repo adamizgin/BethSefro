@@ -1,6 +1,16 @@
 @font-face {
 	font-family: 'Serto BeQaco Bold';
-	src: local('Serto BeQaco Bold');
+	src: url('Serto BeQaco Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Estrangelo Quenneshrina';
+	src: url('Estrangelo Quenneshrin.otf');
+}
+
+@font-face {
+	font-family: 'East Syriaca';
+	src: url('East Syriac.otf');
 }
 
 * {
@@ -31,15 +41,31 @@ hr {
 	margin: 30px 0;
 }
 
+.center-txt {
+	text-align: center;
+}
+
 .izgin {
 	font-family: 'Serto BeQaco Bold';
 	letter-spacing: 0;
 	font-size: 30px;
 }
 
-.estrangeloMakikho {
-	font-family: 'EstrangeloEdessa';
+.estrangeloQ {
+	font-family: 'Estrangelo Quenneshrina';
 	font-size: 30px;
+}
+
+.estrangelo {
+	font-family: 'EstrangeloEdessa';
+}
+
+.SertoBeQaco {
+	font-family: 'Serto BeQaco Bold';
+}
+
+.eastSyriaca {
+	font-family: 'east syriac Adiabene';
 }
 
 .mrabco h3 {
@@ -426,4 +452,48 @@ hr {
 	width: 100%;
 	max-width: 700px;
 	display: block;
+}
+
+table, tr, th, td {
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 15px;
+}
+
+table {
+	width: 100%;
+	box-shadow: 0 0 0px 1px inset #0005;
+	border-radius: 5px;
+	border-radius: 10px;
+	position: relative;
+	box-sizing: border-box;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.table-header-tr {
+	background: #47a;
+	color: #fff;
+}
+
+td {
+	border: 1px solid #0005;
+}
+
+td:is(.SertoBeQaco, .estrangelo, .eastSyriaca) {
+	font-size: 40px;
+}
+
+.not-connectable {
+	background: #f10;
+	color: #fff;
+	font-size: 25px;
+}
+
+.connectable {
+	background: #1c3;
+	color: #fff;
+	font-size: 25px;
 }

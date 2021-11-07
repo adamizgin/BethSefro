@@ -31,41 +31,6 @@ $(document).ready(function() {
 			});
 		});
 
-		$('#login-uName').focus(function() {
-			$('#uName-border').css({
-				'width': '100%'
-			});
-		});
-		$('#login-uName').blur(function() {
-			$('#uName-border').css({
-				'width': '0'
-			});
-		});
-		$('#login-pwd').focus(function() {
-			$('#pwd-border').css({
-				'width': '100%'
-			});
-		});
-		$('#login-pwd').blur(function() {
-			$('#pwd-border').css({
-				'width': '0'
-			});
-		});
-
-		$('.login-form button').append('<span class="ripple"></span>');
-		$('.login-form button').click(function(e) {
-			let top = $(window).scrollTop() - $(this).offset().top + e.clientY;
-			let left = $(window).scrollLeft() - $(this).offset().left + e.clientX;
-			$(this).children('span').css({
-				"left": left,
-				"top": top
-			});
-			$(this).children('span').addClass('activeRipple');
-			setTimeout(function() {
-				$('.ripple').removeClass('activeRipple');
-			}, 500);
-		});
-
 		$('#login-hvus').click(function() {
 			setTimeout(function() {
 				window.open('login-page.html', '_self');
@@ -116,4 +81,6 @@ $(document).ready(function() {
 			}, 400);
 		});
 	}, 300);
+	$('.not-connectable').html('<i class="fas fa-times"></i>');
+	$('.connectable').html('<i class="fas fa-check"></i>');
 });
